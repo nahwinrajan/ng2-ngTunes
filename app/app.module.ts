@@ -1,5 +1,7 @@
 import { NgModule }           from '@angular/core';
 import { BrowserModule }      from '@angular/platform-browser';
+import { FormsModule }        from '@angular/forms';
+import { HttpModule }               from '@angular/http';
 
 import { AppComponent }       from './app.component';
 import { NavbarComponent }    from './components/navbar/navbar.component';
@@ -9,7 +11,7 @@ import { SearchComponent }    from './components/search/search.component';
 import { Routing }      from './app.routing';
 
 @NgModule({
-  imports:      [ BrowserModule, Routing ],
+  imports:      [ BrowserModule, Routing, FormsModule, HttpModule ],
   declarations: [ AppComponent, NavbarComponent, AboutComponent, SearchComponent ],
   bootstrap:    [ AppComponent ]
 })
