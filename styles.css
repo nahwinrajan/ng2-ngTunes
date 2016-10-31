@@ -1,3 +1,4 @@
+/*teal-green: #009871*/
 .main {
   border-bottom: 1px solid #333;
   padding: 30px;
@@ -6,11 +7,11 @@
 .artist-header{
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: solid 1px #333;
+  border-bottom: 1px solid #333;
 }
 
 .artist-thumb {
-  width: 250px;
+  width: 200px;
   height: auto;
   float: left;
   margin-right: 15px;
@@ -27,8 +28,15 @@
   background: #333;
   padding: 10px 20px;
   border: 1px solid #666;
+  position: relative;
 }
 
 .album-thumb {
   width: 100%;
+}
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
